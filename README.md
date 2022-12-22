@@ -37,7 +37,7 @@ There are 2 optional arguments as well (the *block* and the *user*).
 - - if you don't specify it, it will use its default value (which is *Block*)
 - The *user* argument:
 - - if you don't put anything in there => **(1)**
-- - if you put specify a user, that user will be blocked or unblocked only
+- - if you put specify a user, that user will be blocked or unblocked only => **(2)**
 
 Some examples:
 - */block-tracking @example123*
