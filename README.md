@@ -55,3 +55,12 @@ Note: */delete-data* does not disable tracking and does not unregister you. (rea
 ### About
 #### /about
 About me page and info
+
+### Autostat
+#### /autostat
+Automatically sends stats in the DM channel every 24 hours.
+You can toggle autostat on or off with this command if you're a supporter. Every day at 10:00 PM (22:00) GMT/UTC you get a message that contains your pie chart (like the one you get when you use /stats)
+
+### Support
+#### /support
+Maintaining and running a bot 24/7 can be expensive and time-consuming. If you want to help, you can report issues and bugs on Github, or you can make a donation to support the development and operation of the bot
