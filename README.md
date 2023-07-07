@@ -52,6 +52,10 @@ Some examples:
 This command permanently removes all saved playtime stats.<br/>
 Note: */delete-data* does not disable tracking and does not unregister you. (read */block-tracking* for more info)
 
+### Remove
+#### /remove {game} 'REMOVE'
+This command resets the specified game-playtime to zero (removes a game from the pie chart)<br/>
+
 ### About
 #### /about
 About me page and info
