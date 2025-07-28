@@ -1,70 +1,69 @@
-# Activity Archivist (issues)
-1. You can report issues and bugs regarding **Activity Archivist#4042**, or suggest new features if you want to.<br/>
-2. Before posting a new issue, please check if already exists.
-###### (give me as many details as you can, so I can help you faster)
+# Activity Archivist - issue tracker
+Report issues and bugs regarding **Activity Archivist#4042**, or suggest new features here.<br/>
 
-- ***Quick note: The bot only updates your playtime when your status message is changed. (eg. when you exit the game)***
+- ***Quick note: The bot only updates your playtime when your Discord status changes. (e.g., when you exit the game)***
 <br/><br/><br/>
 
 ## Basic commands to help you get started:
 
 ### Help
 #### /help [submenu]
-This command displays the help menu. You can use it like this */help* or like this */help [submenu]*. If you want to see more about a specific command use the second option. (eg. */help track*)
+Displays the help menu. Use */help* to view the full list, or */help [submenu]* to show details about a specific command. (e.g., */help track*)
 
 ### Track
 #### /track {user}
-This command creates a profile for the mentioned user (You can use */track @yourusername* to register yourself or */track @otherusername* to register someone else).
-The bot only saves a user's activities (playtimes) if they're registered. Don't worry, registering is easy: just use the */track* command. That's it.
+Creates a profile for the mentioned user (You can use */track @yourusername* to register yourself or */track @otherusername* to register someone else).
+The bot only tracks users who are registered. If you're not registered, just run the command once.
 
 ### Stats
 #### /stats [user]
-This command is used to read the saved playtimes. You can use */stats* to fetch your own stats or use the */stats @username* to read someone else's stats.<br/>
-**Important things to know:**
-- you can only use this command on registered users (read */track* for more info)
-- if you don't want others to use */track @yourname*, you can block them (read */block-tracking* for more info)
+Shows saved playtime and activity statistics. Use */stats* to fetch your own data, or */stats @username* to view someone else's.<br/>
+**Important:**
+- only works on registered users (see */track*)
+- you can block others from tracking or accessing your stats (see */block-tracking*)
 
 ### Block tracking
 #### /block-tracking [block] [user]
-This command is a bit hard to understand, but once you get it, it's not that complicated.<br/>
-This command can be used for 2 different things:
-**(1)** 'un-register' yourself (pauses status message recording)
-**(2)** block a specific user (so they can't use */stats @yourusername*)
+Controls who can access your stats and whether your activity is recorded.<br/>
+Two main uses:
+**(1)** 'un-register' yourself (pause all tracking)
+**(2)** block/unblock a specific user from using */stats* on you
 
-There are 2 optional arguments as well (the *block* and the *user*).
-- The *block* argument:
-- - it has 2 value (*Block* or *Allow*)
-- - if you don't specify it, it will use its default value (which is *Block*)
-- The *user* argument:
-- - if you don't put anything in there => **(1)**
-- - if you put specify a user, that user will be blocked or unblocked only => **(2)**
+Two optional arguments (*block* and *user*).
+- *block*:
+- - *Block* or *Allow*
+- - default is *Block*
+- *user*:
+- - blocks or unblocks the specified user
+- - if left empty, applies to all users globally
 
-Some examples:
+Examples:
 - */block-tracking @example123*
-- - only blocks @example123 (you can use */block-tracking @Barni#6264 Block* too)
+- - blocks @example123
 - */block-tracking*
-- - pauses playtime recording and */stats @yourusername* for everyone (you can also use */block-tracking Block*)
+- - pauses playtime recording and blocks */stats @yourusername* for everyone (same as */block-tracking Block*)
 - */block-tracking Allow*
-- - 're-registers' (opposite of */block-tracking* and */block-tracking Block*)
+- - 're-register' yourself again (opposite of */block-tracking* or */block-tracking Block*)
 
 ### Delete data
 #### /delete-data 'DELETE'
-This command permanently removes all saved playtime stats.<br/>
-Note: */delete-data* does not disable tracking and does not unregister you. (read */block-tracking* for more info)
+Permanently removes all saved playtime stats.<br/>
+Note: */delete-data* does not disable tracking and does not unregister you. (see */block-tracking*)
 
 ### Remove
 #### /remove {game} 'REMOVE'
-This command resets the specified game-playtime to zero (removes a game from the pie chart)<br/>
+Resets all saved playtime for the specified game (removes a game from the pie chart)<br/>
 
 ### About
 #### /about
-About me page and info
+Shows info about the bot and the developer
 
 ### Autostat
 #### /autostat
-Automatically sends stats in the DM channel every 24 hours.
-You can toggle autostat on or off with this command if you're a supporter. Every day at 10:00 PM (22:00) GMT/UTC you get a message that contains your pie chart (like the one you get when you use /stats)
+Automatically sends you a DM containing all saved stats every 24 hours (like */stats*). (supporters only)
+Toggle autostat on/off with this command.
+Note: Message is sent every day at 10:00 PM (22:00) GMT/UTC
 
 ### Support
 #### /support
-Maintaining and running a bot 24/7 can be expensive and time-consuming. If you want to help, you can report issues and bugs on Github, or you can make a donation to support the development and operation of the bot
+Donations, supporter status, and how to become a supporter.
